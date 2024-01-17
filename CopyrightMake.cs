@@ -20,9 +20,9 @@ namespace CopyrightMake
     public WDCopyrightMakeOptions options;
     static void Main(string[] args)
     {
-      string rootDirectory = @"C:\some\random\directory\here";
+      string rootDirectory = @"C:\Path\To\Your\Directory";
       string outputFilePath = Path.Combine(rootDirectory, "thirdpartylicenses.txt");
-      Console.WriteLine("VCPHelper. Copyright (C) 2024-present Mikael K. Aboagye. All Rights reserved. this project is licensed under the MIT License.");
+      Console.WriteLine("CopyrightMake. Copyright (C) 2024 Mikael K. Aboagye. All Rights reserved. this project is licensed under the MIT License.");
       Parser.Default.ParseArguments<WDCopyrightMakeOptions>(args)
                         .WithParsed<WDCopyrightMakeOptions>(o =>
                         {
